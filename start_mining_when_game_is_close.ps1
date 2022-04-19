@@ -33,6 +33,7 @@ do {
     $ProcessSpaceEngineers = Get-Process "SpaceEngineers" -ErrorAction SilentlyContinue
     $ProcessACOdyssey = Get-Process "ACOdyssey" -ErrorAction SilentlyContinue
     $ProcessACOrigins = Get-Process "ACOrigins" -ErrorAction SilentlyContinue
+    $ProcessRainbowSix = Get-Process "RainbowSix" -ErrorAction SilentlyContinue
     #Mining Process
     $ProcessXmrig = Get-Process "xmrig" -ErrorAction SilentlyContinue
     $ProcessExcavator = Get-Process "excavator" -ErrorAction SilentlyContinue
