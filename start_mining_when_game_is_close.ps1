@@ -15,7 +15,6 @@ do {
     $ProcessFaceswap = Get-Process "python" -ErrorAction SilentlyContinue
     $ProcessSoTGame = Get-Process "SoTGame" -ErrorAction SilentlyContinue
     $ProcessBorderlandsGOTY = Get-Process "BorderlandsGOTY" -ErrorAction SilentlyContinue
-    
     $ProcessBorderlands2 = Get-Process "Borderlands2" -ErrorAction SilentlyContinue
     $ProcessBorderlands3 = Get-Process "Borderlands3" -ErrorAction SilentlyContinue
     $ProcessPhasmophobia = Get-Process "Phasmophobia" -ErrorAction SilentlyContinue
@@ -34,6 +33,21 @@ do {
     $ProcessACOdyssey = Get-Process "ACOdyssey" -ErrorAction SilentlyContinue
     $ProcessACOrigins = Get-Process "ACOrigins" -ErrorAction SilentlyContinue
     $ProcessRainbowSix = Get-Process "RainbowSix" -ErrorAction SilentlyContinue
+    $ProcessWarThunder = Get-Process "aces" -ErrorAction SilentlyContinue
+    $ProcessAmericanTruckSimulator = Get-Process "amtrucks" -ErrorAction SilentlyContinue
+    $ProcessAmongUs = Get-Process "Among Us" -ErrorAction SilentlyContinue
+    $ProcessAstroneer = Get-Process "Astro" -ErrorAction SilentlyContinue
+    $ProcessDeadByDaylight = Get-Process "DeadByDaylight" -ErrorAction SilentlyContinue
+    $ProcessHuntShowdown = Get-Process "hunt" -ErrorAction SilentlyContinue
+    $ProcessKSP = Get-Process "KSP_x64" -ErrorAction SilentlyContinue
+    $ProcessNewWorld = Get-Process "NewWorld" -ErrorAction SilentlyContinue
+    $ProcessPrisonArchitect = Get-Process "Prison Architect" -ErrorAction SilentlyContinue
+    $ProcessSCUM = Get-Process "SCUM" -ErrorAction SilentlyContinue
+    $ProcessSkyHaven = Get-Process "SkyHaven" -ErrorAction SilentlyContinue
+    $ProcessTeamFortress2 = Get-Process "hl2" -ErrorAction SilentlyContinue
+    $ProcessTitanfall2 = Get-Process "Titanfall2" -ErrorAction SilentlyContinue
+    $ProcessUNO = Get-Process "UNO" -ErrorAction SilentlyContinue
+    $ProcessTheWitcher3 = Get-Process "witcher3" -ErrorAction SilentlyContinue
     #Mining Process
     $ProcessXmrig = Get-Process "xmrig" -ErrorAction SilentlyContinue
     $ProcessExcavator = Get-Process "excavator" -ErrorAction SilentlyContinue
@@ -72,7 +86,7 @@ do {
         }
     }
     Write-Host "Loading.."
-    if(($null -eq $ProcessBorderlandsGOTY) -and ($null -eq $ProcessSoTGame) -and ($null -eq $ProcessFaceswap) -and ($null -eq $ProcessStarCitizen) -and ($null -eq $ProcessSatisfactory) -and ($null -eq $ProcessWoT) -and ($null -eq $ProcessOverwatch) -and ($null -eq $ProcessLol) -and ($null -eq $ProcessEliteDangerous) -and ($null -eq $ProcessBeamng) -and ($null -eq $ProcessNewWorld)) #Check if games is running 
+    if(($null -eq $ProcessTheWitcher3) -and ($null -eq $ProcessUNO) -and ($null -eq $ProcessTitanfall2) -and ($null -eq $ProcessTeamFortress2) -and ($null -eq $ProcessSkyHaven) -and ($null -eq $ProcessSCUM) -and ($null -eq $ProcessPrisonArchitect) -and ($null -eq $ProcessNewWorld) -and ($null -eq $ProcessKSP) -and ($null -eq $ProcessHuntShowdown) -and ($null -eq $ProcessDeadByDaylight) -and ($null -eq $ProcessAstroneer) -and ($null -eq $ProcessAmongUs) -and ($null -eq $ProcessAmericanTruckSimulator) -and ($null -eq $ProcessWarThunder) -and ($null -eq $ProcessRainbowSix) -and ($null -eq $ProcessACOrigins) -and ($null -eq $ProcessACOdyssey) -and ($null -eq $ProcessSpaceEngineers) -and ($null -eq $ProcessRimWorldWin64) -and ($null -eq $ProcessOxygenNotIncluded) -and ($null -eq $ProcessShadow_of_the_Tomb_Raider) -and ($null -eq $ProcessRise_of_the_Tomb_Raider) -and ($null -eq $ProcessDishonored2) -and ($null -eq $ProcessDishonored) -and ($null -eq $ProcessFallout4) -and ($null -eq $ProcessSkyrimSE) -and ($null -eq $ProcessSkyrimTESV) -and ($null -eq $ProcessFactorio) -and ($null -eq $ProcessTS4_x64) -and ($null -eq $ProcessPhasmophobia) -and ($null -eq $ProcessBorderlands3) -and ($null -eq $ProcessBorderlands2) -and ($null -eq $ProcessBorderlandsGOTY) -and ($null -eq $ProcessSoTGame) -and ($null -eq $ProcessFaceswap) -and ($null -eq $ProcessStarCitizen) -and ($null -eq $ProcessSatisfactory) -and ($null -eq $ProcessWoT) -and ($null -eq $ProcessOverwatch) -and ($null -eq $ProcessLol) -and ($null -eq $ProcessEliteDangerous) -and ($null -eq $ProcessBeamng) -and ($null -eq $ProcessNewWorld)) #Check if games is running 
     { # When process is not active
         Write-host "Process is not active"
         if ($null -eq $ProcessXmrig) #Check if xmrig is not running
