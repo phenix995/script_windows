@@ -5,7 +5,7 @@ $VPNConnectionName = "NordVPN IKEV2"
 # Loop indefinitely
 while ($true) {
     # Ping the server
-    $pingResult = Test-Connection -ComputerName $ServerIP -Count 3 -Quiet
+    $pingResult = Test-Connection -ComputerName $ServerIP -Count 2 -Quiet
     
     if ($pingResult) {
         # Ping successful, wait for 2 seconds
