@@ -8,9 +8,9 @@ while ($true) {
     $pingResult = Test-Connection -ComputerName $ServerIP -Count 3 -Quiet
     
     if ($pingResult) {
-        # Ping successful, wait for 5 seconds
+        # Ping successful, wait for 2 seconds
         Write-Host "Ping OK"
-        Start-Sleep -Seconds 5
+        Start-Sleep -Seconds 2
     }
     else {
         # Ping failed, disconnect and reconnect the VPN
@@ -19,15 +19,15 @@ while ($true) {
         # Disconnect VPN
         rasdial.exe $VPNConnectionName /disconnect
         
-        # Wait for 4 seconds
-        Start-Sleep -Seconds 4
+        # Wait for 5 seconds
+        Start-Sleep -Seconds 5
         
         # Reconnect VPN
         rasdial.exe $VPNConnectionName
         
         Write-Host "VPN reconnected."
         
-        # Wait for 4 seconds
-        Start-Sleep -Seconds 4
+        # Wait for 2 seconds
+        Start-Sleep -Seconds 2
     }
 }
