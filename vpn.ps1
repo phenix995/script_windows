@@ -19,12 +19,15 @@ while ($true) {
         # Disconnect VPN
         rasdial.exe $VPNConnectionName /disconnect
         
-        # Wait for 2 seconds
-        Start-Sleep -Seconds 2
+        # Wait for 4 seconds
+        Start-Sleep -Seconds 4
         
         # Reconnect VPN
         rasdial.exe $VPNConnectionName
         
         Write-Host "VPN reconnected."
+        
+        # Wait for 4 seconds
+        Start-Sleep -Seconds 4
     }
 }
