@@ -1,6 +1,6 @@
 # Define the server IP address and the VPN connection name
 $ServerIP = "1.1.1.1"
-$VPNConnectionName = "NordVPN IKEV2"
+$VPNConnectionName = "NordVPN IKEv2"
 
 # Loop indefinitely
 while ($true) {
